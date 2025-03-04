@@ -318,7 +318,7 @@ export const Route = createFileRoute('/posts')({
     fetchPosts: () => console.info('foo'),
   }),
   loader: ({ context: { fetchPosts } }) => {
-    console.info(fetchPosts()) // 'foo'
+    fetchPosts() // 'foo'
 
     // ...
   },
